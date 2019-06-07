@@ -3,7 +3,7 @@ import React from 'react'
 
 import {BrowserRouter as Router, Link, Route} from 'react-router-dom'
 
-import SearchMovie from "../omdb/SearchMovie";
+import SearchBook from "../bookie/SearchBook";
 import DetailedBook from "./DetailedBook";
 
 export default class Whiteboard extends React.Component {
@@ -22,7 +22,7 @@ export default class Whiteboard extends React.Component {
           {/*  <Link to="/course-editor">Editor</Link>*/}
             <Route
                 exact path="/"
-                component={SearchMovie}
+                component={SearchBook}
             />
 
           {/*<SearchMovie/>*/}

@@ -19,11 +19,11 @@ class DetailedBook extends React.Component {
     }
   }
 
-  // proxyUrl = 'https://afternoon-plains-22170.herokuapp.com'
+  proxyUrl = 'https://afternoon-plains-22170.herokuapp.com'
   BASE_URL = 'https://www.googleapis.com/books/v1/volumes/'
 
   searchBook = () =>
-      fetch(( this.BASE_URL + this.bookId),  {
+      fetch((this.proxyUrl+ this.BASE_URL + this.bookId),  {
         // mode: 'no-cors',
         method: 'GET',
         headers:{

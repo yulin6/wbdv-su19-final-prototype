@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import WhiteBoard from './components/WhiteBoard'
-import SearchMovie from "./omdb/SearchMovie";
+import SearchBook from "./bookie/SearchBook";
 
 ReactDOM.render(
     <div className="container-fluid">
