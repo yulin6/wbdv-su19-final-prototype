@@ -14,7 +14,7 @@ export default class SearchMovie extends React.Component {
   keywordChanged = event =>
       this.setState({keyword: event.target.value})
 
-  proxyUrl = 'https://secure-garden-16347.herokuapp.com/'
+  proxyUrl = 'https://afternoon-plains-22170.herokuapp.com'
   BASE_URL = 'https://www.googleapis.com/books/v1/volumes?q=intitle:'
 
   searchMovie = () =>

@@ -19,7 +19,7 @@ class DetailedBook extends React.Component {
     }
   }
 
-  proxyUrl = 'https://secure-garden-16347.herokuapp.com/'
+  proxyUrl = 'https://afternoon-plains-22170.herokuapp.com'
   BASE_URL = 'https://www.googleapis.com/books/v1/volumes/'
 
   searchBook = () =>
