@@ -14,11 +14,11 @@ export default class SearchMovie extends React.Component {
   keywordChanged = event =>
       this.setState({keyword: event.target.value})
 
-  proxyUrl = 'https://afternoon-plains-22170.herokuapp.com'
+  // proxyUrl = 'https://afternoon-plains-22170.herokuapp.com'
   BASE_URL = 'https://www.googleapis.com/books/v1/volumes?q=intitle:'
 
   searchMovie = () =>
-      fetch((this.proxyUrl + this.BASE_URL + this.state.keyword),  {
+      fetch(( this.BASE_URL + this.state.keyword),  {
         // mode: 'no-cors',
         method: 'GET',
         headers:{
