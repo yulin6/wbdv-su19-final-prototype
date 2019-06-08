@@ -2,8 +2,6 @@ import React from 'react'
 import {Link} from "react-router-dom";
 
 
-var wtf = 0
-
 class DetailedBook extends React.Component {
 
   constructor(props) {
@@ -19,7 +17,7 @@ class DetailedBook extends React.Component {
     }
   }
 
-  proxyUrl = 'https://afternoon-plains-22170.herokuapp.com'
+  proxyUrl = 'https://secure-garden-16347.herokuapp.com/'
   BASE_URL = 'https://www.googleapis.com/books/v1/volumes/'
 
   searchBook = () =>

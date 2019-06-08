@@ -1,5 +1,5 @@
 import React from 'react'
-import DetailedBook from "../components/DetailedBook";
+
 import {BrowserRouter as Router, Link, Route} from 'react-router-dom'
 
 export default class SearchBook extends React.Component {
@@ -14,10 +14,10 @@ export default class SearchBook extends React.Component {
   keywordChanged = event =>
       this.setState({keyword: event.target.value})
 
-  proxyUrl = 'https://afternoon-plains-22170.herokuapp.com'
+  proxyUrl = 'https://secure-garden-16347.herokuapp.com/'
   BASE_URL = 'https://www.googleapis.com/books/v1/volumes?q=intitle:'
 
-  searchMovie = () =>
+  searchBooks = () =>
       fetch((this.proxyUrl + this.BASE_URL + this.state.keyword),  {
         // mode: 'no-cors',
         method: 'GET',
@@ -28,12 +28,12 @@ export default class SearchBook extends React.Component {
         }
       })
   .then(response => response.json())
-  .then(response => this.renderMovies(response))
+  .then(response => this.renderBooks(response))
 
       // console.log(this.state.keyword)
 
 
-  renderMovies = (response) =>
+  renderBooks = (response) =>
       this.setState({books: response.items})
       // console.log(Search)
 
@@ -53,7 +53,7 @@ export default class SearchBook extends React.Component {
                      placeholder="keyword"/>
               <div className="input-group-append">
                 <button
-                    onClick={this.searchMovie}
+                    onClick={this.searchBooks}
                     className="btn btn-primary">
                   Search
                 </button>

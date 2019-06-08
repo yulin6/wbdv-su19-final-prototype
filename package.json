@@ -18,7 +18,6 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "proxy": "https://www.googleapis.com/auth/books",
   "browserslist": {
     "production": [
       ">0.2%",
